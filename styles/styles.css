@@ -1,0 +1,107 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+* body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(252, 238, 221);
+  padding: 2.5%;
+}
+* body article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  width: 85vw;
+  max-width: 300px;
+  padding-bottom: 3%;
+}
+* body article img {
+  width: 100%;
+  margin-bottom: 5%;
+}
+* body article section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+* body article section h4 {
+  margin: 0% 0% 5% 5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 0.75rem;
+  color: rgb(164, 164, 164);
+  letter-spacing: 1px;
+}
+* body article section h1 {
+  margin: 0% 5% 5% 5%;
+  font-weight: bold;
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  line-height: 23px;
+}
+* body article section p {
+  display: inline-block;
+  margin: 0% 5% 10% 5%;
+  font-size: 0.7rem;
+  color: rgb(164, 164, 164);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+* body article div {
+  width: 90%;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 5%;
+}
+* body article div p {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  display: inline-block;
+  color: green;
+  margin: 0%;
+}
+* body article div p:nth-of-type(2) {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: rgb(164, 164, 164);
+}
+* body article button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+  background-color: green;
+  border-style: none;
+  border-radius: 8px;
+  padding: 3%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+* body article button svg {
+  margin: 0;
+}
+* body article button p {
+  display: inline;
+  font-size: 50%;
+  margin: 0px;
+}
+* body article button:hover {
+  background-color: rgb(37, 64, 26);
+}
+* body .attribution {
+  margin-top: 5vh;
+}/*# sourceMappingURL=styles.css.map */

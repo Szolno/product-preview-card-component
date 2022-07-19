@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+* body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(252, 238, 221);
+  position: absolute;
+}
+* body .template {
+  margin: 0;
+  display: grid;
+  grid-auto-rows: minmax(-webkit-min-content, -webkit-max-content);
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-areas: " f " " c ";
+  width: 85vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  bottom: 3%;
+}
+@media (min-width: 720px) {
+  * body .template {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "f c";
+    max-width: none;
+    width: 50%;
+  }
+}
+* body .template .foto {
+  grid-area: f;
+  height: 100%;
+}
+* body .template .foto .imgmb {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 720px) {
+  * body .template .foto .imgmb {
+    display: none;
+  }
+}
+* body .template .foto .imgdktp {
+  display: none;
+}
+@media (min-width: 720px) {
+  * body .template .foto .imgdktp {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+* body .template .content {
+  grid-area: c;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 15px;
+}
+@media (min-width: 720px) {
+  * body .template .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+* body .template .content section {
+  margin-top: 15px;
+}
+@media (min-width: 720px) {
+  * body .template .content section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70%;
+    max-width: 100%;
+  }
+}
+* body .template .content section h4 {
+  margin: 0% 0% 5% 5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 0.75rem;
+  color: rgb(164, 164, 164);
+  letter-spacing: 1px;
+}
+@media (min-width: 720px) {
+  * body .template .content section h4 {
+    font-weight: 100;
+    font-size: 1rem;
+  }
+}
+* body .template .content section h1 {
+  margin: 0% 5% 5% 5%;
+  font-weight: bold;
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  line-height: 32px;
+}
+@media (min-width: 720px) {
+  * body .template .content section h1 {
+    font-size: 2rem;
+  }
+}
+* body .template .content section p {
+  display: inline-block;
+  margin: 0% 5% 10% 5%;
+  font-size: 0.7rem;
+  color: rgb(164, 164, 164);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+@media (min-width: 720px) {
+  * body .template .content section p {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+* body .template .content div {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 5%;
+}
+* body .template .content div p {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  display: inline-block;
+  color: #0c814b;
+  margin: 0%;
+}
+@media (min-width: 720px) {
+  * body .template .content div p {
+    font-size: 2rem;
+  }
+}
+* body .template .content div p:nth-of-type(2) {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: rgb(164, 164, 164);
+}
+@media (min-width: 720px) {
+  * body .template .content div p:nth-of-type(2) {
+    font-size: 1.2rem;
+  }
+}
+* body .template .content button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+  background-color: #0c814b;
+  border-style: none;
+  border-radius: 8px;
+  padding: 3%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+@media (min-width: 720px) {
+  * body .template .content button {
+    width: 90%;
+    padding: 5%;
+  }
+}
+* body .template .content button svg {
+  margin: 0;
+}
+* body .template .content button p {
+  display: inline;
+  font-size: 50%;
+  margin: 0px;
+}
+@media (min-width: 720px) {
+  * body .template .content button p {
+    font-size: 1rem;
+  }
+}
+* body .template .content button:hover {
+  background-color: rgb(37, 64, 26);
+}
+* body .template .attribution {
+  width: 80%;
+}/*# sourceMappingURL=index.css.map */
